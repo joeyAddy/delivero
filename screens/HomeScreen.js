@@ -75,14 +75,16 @@ const HomeScreen = () => {
         <Categories />
 
         {/* featured */}
-        {featuredCategory?.map((category) => (
-          <Featured
-            key={category._id}
-            id={category._id}
-            title={category.name}
-            description={category.short_description}
-          />
-        ))}
+        <View className="pb-36">
+          {featuredCategory?.map((category) => (
+            <Featured
+              key={category._id}
+              id={category._id}
+              title={category.name}
+              description={category.short_description}
+            />
+          ))}
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
