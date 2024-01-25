@@ -6,7 +6,7 @@ import { selectRestaurant } from "../features/restaurantSlice";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { XMarkIcon } from "react-native-heroicons/outline";
 import * as Progress from "react-native-progress";
-import MapView, { Marker } from "react-native-maps";
+import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
 
 const Delivery = () => {
   const navigation = useNavigation();
@@ -49,6 +49,7 @@ const Delivery = () => {
       </SafeAreaView>
 
       <MapView
+        provider={PROVIDER_GOOGLE}
         initialRegion={{
           latitude: restaurant.lat,
           longitude: restaurant.long,

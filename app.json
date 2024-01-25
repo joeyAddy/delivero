@@ -15,16 +15,37 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.joeydevs.Delivero",
+      "config": {
+        "googleMapsApiKey": "AIzaSyAy9SJeGJK_9a3eWDBtCcs2vpmfhNyzVHA"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.joeydevs.Delivero",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBaP5qvnuiOtxiysS8d-iT2WuxcxqfOAjE"
+        }
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0f64c5d8-244e-47f0-9ea5-02e46a3c881c"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/0f64c5d8-244e-47f0-9ea5-02e46a3c881c"
     }
   }
 }
